@@ -114,6 +114,10 @@ h1,h2,h3,h4,h5,h6,p{
 .contenido-prod{
     width: 100%;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
     
 }
 .contenido-prod .tarjeta-prod{
@@ -123,10 +127,11 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius: 10px;
     border: 1px solid black;
     text-align: center;
+    margin: 20px;
 }
 .tarjeta-prod img{
     width: 60%;
-    height: auto;
+    height: 300px;
     margin-top: 10px;
     border-radius: 10px;
 }
@@ -156,4 +161,35 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 7px 12px;
     border-radius: 10px;
     text-decoration: none;
+}
+/*servicios*/
+.cont-servicios{
+    display: flex;
+    width: 80%;
+    height: auto;
+}
+.servicios .servicio-1,
+.servicios .servicio-2{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.servicio-1 img,
+.servicio-2 img,
+.servicio-1 .cont-texto,
+.servicio-2 .con-texto{
+    width: 50%;
+    height: auto;
+}
+.servicio-1 .cont-texto h3,
+.servicio-2 .cont-texto h3{
+    font-size: 45px;
+    color:#A0EBA0;
+    font-weight: bold;
+}
+.servicio-1 .cont-texto p,
+.servicio-2 .cont-texto p{
+    font-size: 45px;
+    color: #DFB0CC;
+    font-weight: bold;
 }
